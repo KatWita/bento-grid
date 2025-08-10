@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 3rem 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 7%);
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.gold {
+  color: hsl(39, 100%, 71%);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.stars,
+.posting,
+.social,
+.followers,
+.schedule,
+.content {
+  border-radius: 10px;
+}
+
+.stars {
+  padding: 4rem 3rem 3.8rem;
+  background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+.stars__title {
+  font-size: 4.6rem;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: 1px;
+}
+.stars__img {
+  margin: 2.4rem auto 1rem;
+  width: 196px;
+}
+.stars__text {
+  font-size: 1.8rem;
+  color: hsl(254, 88%, 90%);
+}
+
+.accounts__text,
+.posting,
+.social__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+
+.accounts {
+  padding: 5rem 0;
+}
+.accounts__img {
+  margin: 0 auto 1.6rem;
+  width: 330px;
+}
+.accounts__text {
+  padding-left: 1.5rem;
+}
+
+.posting {
+  padding: 2rem 1.5rem;
+  height: 220px;
+  background-color: hsl(39, 100%, 71%);
+  overflow: hidden;
+}
+.posting__img {
+  margin-top: 1.6rem;
+  width: 210px;
+}
+
+.social {
+  padding: 3rem 1.5rem;
+  margin-top: 3.4rem;
+  background-color: hsl(254, 88%, 90%);
+}
+.social__title, .social__text {
+  text-align: center;
+}
+.social__title {
+  margin-bottom: 2.2rem;
+}
+.social__text {
+  font-size: 1.8rem;
+  padding: 2rem 2rem 0;
+  line-height: 110%;
+}
+
+.followers {
+  padding: 2.5rem 0;
+  margin-top: 3rem;
+  background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+}
+.followers__img {
+  margin: 0 auto;
+  width: 230px;
+}
+.followers__text {
+  padding: 4rem 6rem 0;
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 90%;
+}
+
+.audience {
+  margin: 4.5rem 0 6rem;
+}
+.audience__number {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.audience__text {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.audience__img {
+  margin-top: 2rem;
+  width: 200px;
+}
+
+.schedule__text,
+.content__text {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 86%;
+}
+
+.schedule {
+  background-color: hsl(31, 66%, 93%);
+  padding: 3.2rem;
+}
+.schedule__text {
+  padding: 0 1rem;
+}
+.schedule__text span {
+  color: hsl(256, 67%, 59%);
+}
+.schedule__img {
+  margin-top: 2.5rem;
+  width: 215px;
+}
+
+.content {
+  padding: 2.5rem;
+  margin-top: 3rem;
+  background-color: hsl(39, 100%, 71%);
+}
+.content__img {
+  margin-top: 2.2rem;
+  width: 240px;
+}
+
+@media (width >= 40rem) {
+  .social__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+@media (width >= 64rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 100svh;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto 60px 156px 246px;
+    gap: 3.3rem;
+    width: 1000px;
+    height: 880px;
+  }
+  article {
+    overflow: hidden;
+  }
+  .stars {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding: 6rem 5rem 0;
+  }
+  .stars__title {
+    font-size: 5rem;
+  }
+  .accounts,
+  .audience {
+    grid-column: 2/3;
+  }
+  .accounts,
+  .posting {
+    grid-row: 2/4;
+  }
+  .accounts {
+    padding: 3rem 0 0;
+  }
+  .accounts__img {
+    margin-bottom: 2rem;
+    width: 306px;
+  }
+  .accounts__text {
+    padding-right: 2rem;
+    font-size: 3.2rem;
+    line-height: 85%;
+  }
+  .posting {
+    grid-column: 3/4;
+    padding: 3rem 2.5rem 2rem;
+    height: auto;
+    font-size: 3.2rem;
+    line-height: 90%;
+  }
+  .posting__img {
+    width: 100%;
+  }
+  .social {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    padding: 4.5rem 3rem 0;
+    margin-top: 0;
+  }
+  .social__title, .social__text {
+    text-align: left;
+  }
+  .social__title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .social__img {
+    width: 320px;
+  }
+  .social__text {
+    padding: 2.2rem 0 0;
+    font-size: 1.6rem;
+  }
+  .followers,
+  .audience {
+    grid-row: 4/-1;
+  }
+  .followers {
+    display: flex;
+    align-items: center;
+    grid-column: 3/-1;
+    padding: 0 2.5rem;
+    margin: 0;
+  }
+  .followers__img {
+    margin-right: 1.5rem;
+    width: 190px;
+  }
+  .followers__text {
+    padding: 0;
+    font-size: 3.7rem;
+    text-align: left;
+  }
+  .audience {
+    padding-top: 1.4rem;
+    margin: 0;
+  }
+  .audience__number {
+    font-size: 6.2rem;
+  }
+  .audience__text {
+    margin-top: 0.6rem;
+    font-size: 1.8rem;
+  }
+  .audience__img {
+    margin-top: 3.6rem;
+    width: 180px;
+  }
+  .schedule,
+  .content {
+    grid-column: 1/2;
+  }
+  .schedule {
+    grid-row: 1/3;
+    padding: 8rem 3rem;
+  }
+  .schedule__text {
+    padding: 0;
+    font-size: 3.6rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 90%;
+  }
+  .schedule__img {
+    width: 165px;
+  }
+  .content {
+    grid-row: 3/-1;
+    margin-top: 0;
+  }
+  .content__text {
+    font-size: 3.6rem;
+    letter-spacing: -1.5px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .content__img {
+    margin-top: 5rem;
+    width: 190px;
+  }
+}
+@media (width >= 80rem) {
+  main {
+    width: 1120px;
+  }
+  .stars__title {
+    font-size: 6rem;
+  }
+  .accounts__img {
+    width: 348px;
+  }
+  .social__img {
+    width: 370px;
+  }
+  .social__text {
+    font-size: 1.8rem;
+  }
+  .followers__img {
+    width: 230px;
+  }
+  .followers__text {
+    font-size: 4rem;
+  }
+  .schedule__text {
+    font-size: 4rem;
+  }
+  .schedule__img {
+    width: 185px;
+  }
+  .content__text {
+    font-size: 4.2rem;
+    line-height: 90%;
+  }
+  .content__img {
+    margin-top: 5.5rem;
+    width: 218px;
+  }
+}/*# sourceMappingURL=style.css.map */
